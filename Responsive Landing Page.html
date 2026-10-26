@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TravelEase</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #12203a; }
+    nav {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 8px; padding: 14px; background: #12203a; color: white;
+    }
+    nav a { color: white; margin: 0 8px; text-decoration: none; }
+    .hero { padding: 40px 16px; text-align: center; background: #2f5bea; color: white; }
+    .hero h1 { font-size: 1.6rem; }
+    .hero img { max-width: 100%; height: auto; margin-top: 16px; border-radius: 12px; }
+    .features {
+      display: grid; grid-template-columns: 1fr; gap: 16px; padding: 20px;
+    }
+    .box { background: #eef2ff; padding: 20px; border-radius: 10px; text-align: center; }
+    footer { background: #12203a; color: white; text-align: center; padding: 16px; }
+    @media (min-width: 768px) {
+      nav { flex-direction: row; justify-content: space-between; padding: 14px 32px; }
+      .hero h1 { font-size: 2.4rem; }
+      .features { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .features { grid-template-columns: repeat(3, 1fr); padding: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h2>TravelEase</h2>
+    <div><a href="#home">Home</a><a href="#trips">Trips</a><a href="#contact">Contact</a></div>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Plan your next trip in minutes</h1>
+    <p>Simple, affordable and fun travel plans.</p>
+    <!-- Optional: replace img/hero.jpg with your own image file -->
+    <img src="img/hero.jpg" alt="Mountain trip banner" width="600">
+  </section>
+
+  <section class="features" id="trips">
+    <div class="box"><h3>Easy Booking</h3><p>Plan your trip in a few steps.</p></div>
+    <div class="box"><h3>Best Prices</h3><p>Compare options for your budget.</p></div>
+    <div class="box"><h3>24x7 Help</h3><p>Find support when you need it.</p></div>
+  </section>
+
+  <footer id="contact">Made by Your Name</footer>
+</body>
+</html>
