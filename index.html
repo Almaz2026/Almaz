@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Club | Styled</title>
+  <style>
+    :root { --brand:#3157d5; --light:#eef2ff; --dark:#17213b; --gap:16px; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:Arial,sans-serif; background:var(--light); color:var(--dark); line-height:1.6; padding:var(--gap); }
+    h1 { font-size:2.2rem; letter-spacing:1px; }
+    #hero { background:var(--brand); color:white; text-align:center; padding:32px var(--gap); border-radius:12px; }
+    .card { background:white; padding:var(--gap); margin-top:var(--gap); border-radius:12px; box-shadow:0 4px 14px #17213b18; }
+    table { width:100%; border-collapse:collapse; margin-top:8px; }
+    th,td { padding:10px; border-bottom:1px solid #ccd3e4; text-align:left; }
+    th { background:var(--brand); color:white; }
+    input { padding:8px; margin:4px 0; max-width:100%; }
+    button { background:var(--brand); color:white; border:0; padding:10px 18px; border-radius:6px; font-size:1rem; cursor:pointer; }
+    .note { margin-top:12px; font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <header id="hero"><h1>Coding Club</h1><p>Learn. Build. Share.</p></header>
+  <section class="card"><h2>Upcoming Events</h2>
+    <table><thead><tr><th>Event</th><th>Date</th><th>Venue</th></tr></thead><tbody><tr><td>HTML Workshop</td><td>12 Nov</td><td>Lab 1</td></tr><tr><td>Hackathon</td><td>20 Nov</td><td>Seminar Hall</td></tr></tbody></table>
+  </section>
+  <section class="card"><h2>Register Interest</h2><form action="#" method="get"><p><label for="name">Name: </label><input id="name" name="name" required placeholder="Your name"></p><p><label for="email">Email: </label><input id="email" name="email" type="email" required placeholder="you@example.com"></p><button type="submit">Register</button></form><p class="note">Colour choices: blue represents focus, light backgrounds improve readability, and dark text keeps the page easy to read.</p></section>
+</body>
+</html>
